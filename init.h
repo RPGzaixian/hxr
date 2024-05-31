@@ -18,6 +18,9 @@ extern const std::string goodsap_effect="ok!";
 extern const std::string goodsexp_effect="good!";
 
 };
+
+
+
 /*
 goods_hp::goods_hp(){
     this->name="heal fruit";
@@ -115,4 +118,14 @@ goods_ex::goods_ex(){
 
 //     };
 // }
+
+
+
+
+
+
+
+
+
+
 #endif // INIT_H

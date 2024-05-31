@@ -3,12 +3,13 @@
 #include"trade.h"
 #include"qstring.h"
 #include<vector>
+extern std::vector<std::pair<goods,int>> items_backage;
 package::package(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::package)
 {
     ui->setupUi(this);
-    auto ptr=backage::a.begin();
+    auto ptr=items_backage.begin();
     this->ui->label_2->setText(QString::fromStdString(ptr->first.effect));
     this->ui->pushButton_2->setText(QString::fromStdString(ptr->first.name+'\n'+"还有"+std::to_string(ptr->second)+"个"));
     ptr++;
@@ -20,7 +21,7 @@ package::package(QWidget *parent)
 
 }
 void package::flash(){
-    auto ptr=backage::a.begin();
+    auto ptr=items_backage.begin();
     this->ui->label_2->setText(QString::fromStdString(ptr->first.effect));
     this->ui->pushButton_2->setText(QString::fromStdString(ptr->first.name+'\n'+"还有"+std::to_string(ptr->second)+"个"));
     ptr++;
@@ -35,3 +36,9 @@ package::~package()
 {
     delete ui;
 }
+
+void package::on_pushButton_clicked()
+{
+    this->close();
+}
+

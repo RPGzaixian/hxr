@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include"trade.h"
+
 namespace Ui {
 class store;
 }
@@ -12,10 +13,9 @@ class store : public QWidget
     Q_OBJECT
 
 public:
-    worr&costomer;
 
 
-    explicit store(worr&a,QWidget *parent = nullptr);
+    explicit store(QWidget *parent = nullptr);
 
     ~store();
 

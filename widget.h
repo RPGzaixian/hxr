@@ -1,9 +1,9 @@
 #ifndef WIDGET_H
 #define WIDGET_H
-
 #include <QWidget>
 #include<QPainter>
 #include<QProcess>
+#include"trade.h"
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class Widget;
@@ -17,6 +17,7 @@ class Widget : public QWidget
 public:
     Widget(QWidget *parent = nullptr);
     ~Widget();
+
 protected:
     void paintEvent(QPaintEvent *event) override; // 重写 paintEvent 方法
 private slots:

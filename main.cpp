@@ -4,17 +4,19 @@
 #include"package.h"
 
 
-std::vector<std::pair<goods,int>> backage::a;
+extern std::vector<std::pair<goods,int>> items_backage;
 
 
 int main(int argc, char *argv[])
 {
-    backage::a.push_back(std::make_pair(goods_hp(),0));
-    backage::a.push_back(std::make_pair(goods_ap(),0));
-    backage::a.push_back(std::make_pair(goods_ex(),0));
-    QApplication a(argc, argv);
-    Widget w;
-    w.show();
+
+
+    items_backage.push_back(std::make_pair(goods_hp(),0));
+    items_backage.push_back(std::make_pair(goods_ap(),0));
+    items_backage.push_back(std::make_pair(goods_ex(),0));
+    QApplication a(argc,argv);
+    Widget* w=new Widget;
+    w->show();
     // worr o(1090);
     // store q(o);
     // q.show();

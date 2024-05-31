@@ -6,6 +6,8 @@
 #include "character.h"
 #include "npc.h"
 #include"saving.h"
+#include"QPushButton"
+#include"QLabel"
 class Game : public QGraphicsView
 {
     Q_OBJECT
@@ -13,12 +15,25 @@ class Game : public QGraphicsView
 public:
     Game(QWidget *parent = nullptr);
     Saving *ret;
-private:
+public slots:
+    void button_return();
+    void button_save();
+    void button_bag();
+    void button_store();
 
+private:
     QGraphicsScene *scene;
     Character *character;
     NPC *npc;
-
+    QPushButton *ret_button;
+    QPushButton *sav_button;
+    QPushButton *bag_button;
+    QPushButton *store_button;
+    QLabel *money_label;
+    QLabel *exp_label;
+    // QLabel *money_label;
+    // QLabel *money_label;
+    // QPushButton *ret_button;
 };
 
 

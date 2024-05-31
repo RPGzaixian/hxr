@@ -1,7 +1,6 @@
 <RCC>
     <qresource prefix="/images">
         <file>character.png</file>
-        <file>npc_nvwu.png</file>
     </qresource>
-    <qresource prefix="/"/>
+    <qresource prefix="/cundang"/>
 </RCC>

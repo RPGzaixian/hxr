@@ -29,3 +29,21 @@ void Saving::on_pushButton_2_clicked()
     this->close();
 }
 
+
+void Saving::on_pushButton_3_clicked()
+{
+    Game *game=new Game;
+    game->ret=this;
+    game->show();
+    this->close();
+}
+
+
+void Saving::on_pushButton_4_clicked()
+{
+    Game *game=new Game;
+    game->ret=this;
+    game->show();
+    this->close();
+}
+

@@ -54,4 +54,3 @@ void Widget::on_pushButton_3_clicked()
     reallyquit->setModal(true);
     reallyquit->show();
 }
-
